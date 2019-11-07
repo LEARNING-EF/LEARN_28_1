@@ -19,13 +19,13 @@
 			// **************************************************
 			// *** اطلاعات تستی ********************************
 			// **************************************************
-			for (int index = 1; index <= 10; index++)
+			for (int index = 1; index <= 9; index++)
 			{
 				Person person =
-					new Person()
+					new Person
 					{
 						Age = 20 + index,
-						FullName = $"Full Name ({ index }",
+						FullName = $"Full Name ({ index })",
 					};
 
 				databaseContext.People.Add(person);
