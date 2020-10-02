@@ -20,6 +20,7 @@ namespace LEARNING_EF_CODE_FIRST
 
 				var people =
 					databaseContext.People
+					.OrderBy(current => current.Age)
 					.ToList()
 					;
 
